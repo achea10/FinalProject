@@ -1,16 +1,13 @@
-import React, { Component } from "react";
-import API from "../../utils/API";
-import { Link } from "react-router-dom";
+import React from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import Jumbotron from "../../components/Jumbotron";
-import
 
-const Playlists = () =>
+const NoMatch = () =>
   <Container fluid>
     <Row>
       <Col size="md-12">
         <Jumbotron>
-          <h1>Spotify Playlists will be displayed here</h1>
+          <h1>404 Page Not Found</h1>
           <h1>
             <span role="img" aria-label="Face With Rolling Eyes Emoji">
               
@@ -21,4 +18,4 @@ const Playlists = () =>
     </Row>
   </Container>;
 
-export default Playlists;
+export default NoMatch;
