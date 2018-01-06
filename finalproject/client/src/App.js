@@ -7,11 +7,13 @@ import Playlist from "./pages/Playlist";
 import SignUp from "./pages/SignUp";
 import NoMatch from "./pages/NoMatch";
 
+
 const App = () =>
   <Router>
     <div>
       
       <Switch>
+        <Route exact path="/" component={Home} />
       	<Route exact path="/home" component={Home} />
       	<Route exact path="/sign-up" component={SignUp} />
       	<Route exact path="/feed" component={Feed} />
