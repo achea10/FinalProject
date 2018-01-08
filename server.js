@@ -1,4 +1,3 @@
-//===========================================================================
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -18,7 +17,7 @@ app.use(routes);
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/musicTYE",
+  process.env.MONGODB_URI || "mongodb://localhost/musictoyourears",
   {
     useMongoClient: true
   }

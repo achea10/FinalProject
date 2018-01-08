@@ -1,26 +1,37 @@
-//=======================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 const mongoose = require("mongoose");
 const db = require("../models");
 mongoose.Promise = global.Promise;
 
-// This file empties the Post collection and inserts the books below
-
 mongoose.connect(
-
-  process.env.MONGODB_URI || "mongodb://localhost/musicTYE",
+  process.env.MONGODB_URI || "mongodb://localhost/musictoyourears",
   {
     useMongoClient: true
   }
 );
 
 const postSeed = [
-  {
-    title: "Test Schema",
-    author: "Philip Costache",
-    body:
-      'TEST',
-    date: new Date(Date.now())
-  }
+	{
+		title: "stuff",
+		body: "blah blah blah",
+		author: "who is logged in",
+		imgURL: "www.url.com",
+		date: new Date(Date.now())
+	},
+	{
+		title: "stuff2",
+		body: "blah blah blah2",
+		author: "who is logged in",
+		imgURL: "www.url.com",
+		date: new Date(Date.now())
+
+	},
+	{
+		title: "stuff3",
+		body: "blah blah blah",
+		author: "who is logged in",
+		imgURL: "www.url.com",
+		date: new Date(Date.now())
+	}
 ];
 
 db.Post
