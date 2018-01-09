@@ -102,9 +102,11 @@ class Feed extends Component {
                 {this.state.posts.map(post => (
                   <ListItem key={post._id}>
                     <Link to={"/posts/" + post._id} style={{textDecoration: 'none'}}>
-                        <h6>{post.author}</h6> 
-                        <p>{post.title}</p> {post.body}
-                        <img src={post.imgUrl}></img>
+                        <h5>{post.author}</h5> 
+                        <h6>{post.title}</h6> 
+                        <h7>{post.body}</h7>
+                        <br></br>
+                        <img src={post.imgUrl} style={{width: 200, height: 200}}></img>
                     </Link>
                   </ListItem>
                 ))}
