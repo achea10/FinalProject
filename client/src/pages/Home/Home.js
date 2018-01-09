@@ -61,7 +61,7 @@ class Home extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <h1>Write your post here</h1>    
+              <h1>Music to your ears</h1>    
             </Jumbotron>
             <form>
               <Input
@@ -81,6 +81,12 @@ class Home extends Component {
                 onChange={this.handleInputChange}
                 name="body"
                 placeholder="Write your Post here"
+              />
+              <Input
+                value={this.state.imgUrl}
+                onChange={this.handleInputChange}
+                name="imgUrl"
+                placeholder="add and image"
               />
               <FormBtn
                 disabled={!(this.state.author && this.state.title)}
