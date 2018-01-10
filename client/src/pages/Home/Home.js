@@ -4,7 +4,8 @@ import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import Jumbotron from "../../components/Jumbotron";
-
+import { List, ListItem } from "../../components/List";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
 
@@ -60,7 +61,7 @@ class Home extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <h1>Write your post here</h1>    
+              <h1>Music to your ears</h1>    
             </Jumbotron>
             <form>
               <Input
@@ -81,6 +82,12 @@ class Home extends Component {
                 name="body"
                 placeholder="Write your Post here"
               />
+              <Input
+                value={this.state.imgUrl}
+                onChange={this.handleInputChange}
+                name="imgUrl"
+                placeholder="add and image"
+              />
               <FormBtn
                 disabled={!(this.state.author && this.state.title)}
                 onClick={this.handleFormSubmit}>
@@ -89,6 +96,29 @@ class Home extends Component {
             </form>
           </Col>
         </Row>
+        <Row>
+          <Col size="md-6">
+            <Jumbotron>
+              <h1>Posts</h1>
+            </Jumbotron>
+            {this.state.posts.length ? (
+              <List>
+                {this.state.posts.map(post => (
+                  <ListItem key={post._id}>
+                    <Link to={"/posts/" + post._id}>
+                      <strong>
+                        {post.author} by {post.title} {post.body}
+                      </strong>
+                    </Link>
+                  </ListItem>
+                ))}
+              </List>
+            ) : (
+              <h3>No Results to Display</h3>
+            )}
+          </Col>
+        </Row>
+        
       </Container>
     )
   }  

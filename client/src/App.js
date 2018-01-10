@@ -7,12 +7,18 @@ import Learn from "./pages/Learn";
 import Playlist from "./pages/Playlist";
 import SignUp from "./pages/SignUp";
 import NoMatch from "./pages/NoMatch";
+import Navbar from "./components/Navbar";
+import Logo from "./components/Logo";
+
+
 
 
 const App = () =>
 
   <Router>
     <div>
+      <Logo />
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
       	<Route exact path="/home" component={Home} />
