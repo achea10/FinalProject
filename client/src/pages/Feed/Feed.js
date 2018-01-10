@@ -2,10 +2,11 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
-import { Input, TextArea, FormBtn } from "../../components/Form";
-import Jumbotron from "../../components/Jumbotron";
+import { Input, TextArea } from "../../components/Form";
 import { List, ListItem } from "../../components/List";
 import { Link } from "react-router-dom";
+import { Button } from 'react-bootstrap';
+
 
 class Feed extends Component {
 
@@ -86,11 +87,11 @@ class Feed extends Component {
                 name="imgUrl"
                 placeholder="add and image"
               />
-              <FormBtn
+              <Button
                 disabled={!(this.state.author && this.state.title)}
                 onClick={this.handleFormSubmit}>
                 Submit Post
-              </FormBtn>
+              </Button>
             </form>
           </Col>
         </Row>

@@ -11,19 +11,19 @@ const Navbar = props =>
 			</div>
 			<ul className="nav navbar-nav">
 				<li 
-					className={
-						window.location.pathname === "/" ||
-						window.location.pathname === "/home" ? "active" : ""}
+					// className={
+					// 	window.location.pathname === "/" ||
+					// 	window.location.pathname === "/home" ? "active" : ""}
 				>
 					<Link to="/">Home</Link>
 				</li>
 				<li
-					className={window.location.pathname === "/feed" ? "active" : ""}
+					// className={window.location.pathname === "/feed" ? "active" : ""}
 				>
 					<Link to="/feed">Feed</Link>
 				</li>
 				<li
-					className={window.location.pathname === "/learn" ? "active" : ""}
+					// className={window.location.pathname === "/learn" ? "active" : ""}
 				>
 				<Link to="/learn">Learn</Link>
 
