@@ -9,6 +9,7 @@ import SignUp from "./pages/SignUp";
 import NoMatch from "./pages/NoMatch";
 import Navbar from "./components/Navbar";
 import Logo from "./components/Logo";
+import LogIn from "./pages/LogIn";
 
 
 
@@ -26,6 +27,7 @@ const App = () =>
       	<Route exact path="/feed" component={Feed} />
       	<Route exact path="/learn" component={Learn} />
       	<Route exact path="/playlist" component={Playlist} />
+        <Route exact path="/log-in" component={LogIn} />
         <Route component={NoMatch} />
       </Switch>
     </div>
