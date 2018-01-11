@@ -31,6 +31,9 @@ const Navbar = props =>
 				<li>
 					<Link to="/sign-up" className="">SignUp</Link>
 				</li>
+				<li>
+					<Link to="/playlist">Playlists</Link>
+				</li>
 				
 			</ul>
 		</div>
