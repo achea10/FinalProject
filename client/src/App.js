@@ -10,6 +10,7 @@ import NoMatch from "./pages/NoMatch";
 import Navbar from "./components/Navbar";
 import Logo from "./components/Logo";
 import LogIn from "./pages/LogIn";
+import background from "./components/Logo";
 
 
 
@@ -18,6 +19,7 @@ const App = () =>
 
   <Router>
     <div>
+      <background />
       <Logo />
       <Navbar />
       <Switch>

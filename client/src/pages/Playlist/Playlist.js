@@ -3,6 +3,7 @@ import React from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import Jumbotron from "../../components/Jumbotron";
 import SpotifyPlayer from 'react-spotify-player';
+import { Input, TextArea } from "../../components/Form";
 
 
 const Playlists = () =>
@@ -10,19 +11,17 @@ const Playlists = () =>
     <Row>
       <Col size="md-12">
         <div>
-        <Jumbotron>
-          <h1>Check out these Playlist we got together for you </h1>
-          <h1>
-            <span role="img" aria-label="Face With Rolling Eyes Emoji">
-              
-            </span>
-          </h1>
-        </Jumbotron>
+        <form>
+          <h3>Search for your Favorite artists</h3>
+            <Input 
+            placeholder="Search"
+            />
+        </form>
         </div>
         <div>
-        <h3>2000s Alternative Rock</h3>
+        <h3>New Music</h3>
           <SpotifyPlayer
-            uri="https://open.spotify.com/user/ltxteis/playlist/2VCUG2HWlEeq1zvUvRkN80"
+            uri="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX4JAvHpjipBk"
   
             />
         </div>
