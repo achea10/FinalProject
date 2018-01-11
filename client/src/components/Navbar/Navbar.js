@@ -28,6 +28,10 @@ const Navbar = props =>
 				<Link to="/learn">Learn</Link>
 
 				</li>
+				<li>
+					<Link to="/sign-up" className="">SignUp</Link>
+				</li>
+				
 			</ul>
 		</div>
 	</nav>
