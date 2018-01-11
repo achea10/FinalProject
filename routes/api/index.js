@@ -1,9 +1,8 @@
+//===================================================================
 const router = require("express").Router();
-const postRoutes = require("./posts");
-const instructorRoutes = require("./instructor");
+const topicRoutes = require("./topics");
 
-// routes
-router.use("/posts", postRoutes);
-router.use("/instructor", instructorRoutes);
+// initialize routes for "/api/topics" and "/api/comments"
+router.use("/topics", topicRoutes);
 
 module.exports = router;

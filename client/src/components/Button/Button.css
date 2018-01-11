@@ -1,0 +1,15 @@
+
+.button {
+
+	border-radius: 50px;
+	font-size: 20px;
+	font-family: Verdana, Geneva, sans-serif; 
+	color: #F1F1F1;
+	background-color: #0070AC;
+	width: 562px;
+	color: #EDEDED;
+	margin-left: 500px;
+	margin-top: 20px;
+	border: 9px solid #DCDCDC; 
+}
+

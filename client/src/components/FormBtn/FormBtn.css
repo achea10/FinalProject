@@ -1,0 +1,14 @@
+
+.btn {
+
+	border-radius: 50px;
+	font-size: 20px;
+	font-family: Verdana, Geneva, sans-serif; 
+	color: #F1F1F1;
+	background-color: #0070AC;
+	width: 200px;
+	color: #EDEDED;
+	margin-left: 140px;
+	margin-top: 5px;
+	border: 9px solid #DCDCDC; 
+}

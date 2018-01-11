@@ -1,4 +1,5 @@
+
 module.exports = {
-  Post: require("./post"),
-  Instructor: require("./instructor")
+  Topic: require("./topic"),
+  Comment: require("./comment")
 };

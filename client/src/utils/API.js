@@ -1,17 +1,26 @@
+//===================================================================
 import axios from "axios";
 
 export default {
-	//Get all posts
-	getPosts: function () {
-		return axios.get("api/posts");
+
+	getTopics: function () {
+
+		return axios.get("/api/topics/");
 	},
-	savePost: function(postData) {
-		return axios.post("/api/posts", postData);
+	getTopic: function(id) {
+
+    	return axios.get("/api/topics/" + id);
+  	},
+	saveTopic: function(topicData) {
+
+		return axios.post("/api/topics", topicData);
 	},
-	getInstructor: function () {
-		return axios.get("api/instructor");
+	getComments: function(id) {
+
+		return axios.get("/api/comments/" + id);
 	},
-	saveInstructor: function(instructorData) {
-		return axios.post("/api/instructor", instructorData);
+	saveComment: function(commentData) {
+
+		return axios.post("/api/comments/" + commentData);
 	}
 };
