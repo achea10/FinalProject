@@ -1,43 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 
-const Navbar = props =>
-	<nav className="navbar navbar-default">
-		<div className="container-fluid">
-			<div className="navbar-header">
-				<Link className="navbar-brand" to="/">
-				</Link>
-			</div>
-			<ul className="nav navbar-nav">
-				<li 
-					// className={
-					// 	window.location.pathname === "/" ||
-					// 	window.location.pathname === "/home" ? "active" : ""}
-				>
-					<Link to="/">Home</Link>
-				</li>
-				<li
-					// className={window.location.pathname === "/feed" ? "active" : ""}
-				>
-					<Link to="/feed">Feed</Link>
-				</li>
-				<li
-					// className={window.location.pathname === "/learn" ? "active" : ""}
-				>
-				<Link to="/learn">Learn</Link>
-
-				</li>
-				<li>
-					<Link to="/sign-up" className="">SignUp</Link>
-				</li>
-				<li>
-					<Link to="/playlist">Playlists</Link>
-				</li>
-				
-			</ul>
-		</div>
-	</nav>
+const Navbar = props => (
+	<div  className="container-fluid">
+      <nav className="navbar fixed-top navbar-light bg-light">
+      	<div className="container-fluid">
+        <a className="navbar-brand" href="#"> Music 2 Your Ears </a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon" />
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link">
+              <Link to="/">Home</Link> 
+              <span className="sr-only">(current)</span></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link">
+              <Link to="/feed">Feed</Link>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link">
+              <Link to="/learn">Learn</Link>
+              </a>
+            </li>
+          </ul>
+          <form className="form-inline my-2 my-lg-0">
+            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        </div>
+      </nav>
+      </div>
+    );
 
 export default Navbar;
-

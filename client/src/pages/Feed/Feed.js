@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
@@ -6,6 +5,7 @@ import { Input, TextArea } from "../../components/Form";
 import { List, ListItem } from "../../components/List";
 import { Link } from "react-router-dom";
 import { Button } from 'react-bootstrap';
+import Modal from "../../components/Modal";
 
 
 class Feed extends Component {
@@ -58,9 +58,9 @@ class Feed extends Component {
 
     return (
 
-      <Container fluid>
+      <Container center>
         <Row>
-          <Col size="md-12">
+          <Col size="md-12" >
               <h1>Music to your ears</h1>    
             <form>
               <Input
@@ -96,7 +96,7 @@ class Feed extends Component {
           </Col>
         </Row>
         <Row>
-          <Col size="md-6">
+          <Col size="md-12">
               <h1>Posts</h1>
             {this.state.posts.length ? (
               <List>
@@ -115,6 +115,8 @@ class Feed extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
+            <Modal> 
+            </Modal>
           </Col>
         </Row>
         

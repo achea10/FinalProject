@@ -20,7 +20,6 @@ const App = () =>
   <Router>
     <div>
       <background />
-      <Logo />
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
